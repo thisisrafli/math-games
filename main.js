@@ -40,9 +40,7 @@ function createRandomQuestions() {
    
 }
 
-let play = true;
-
-while (play) {
+while (true) {
    
    // clean the terminal every game
    console.clear();
@@ -70,10 +68,8 @@ while (play) {
    
    let playAgain = input("WANT TO PLAY AGAIN? Y/N: ");
    
-   if (playAgain.toUpperCase() === "Y") {
-      play = true;
-   } else {
-      play = false;
+   if (playAgain.toUpperCase() !== "Y") {
+      break;
    }
    
 }
